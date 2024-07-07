@@ -1,0 +1,42 @@
+site_name: BSG Support Docs
+copyright: Copyright &copy; BSG Partners Co., Ltd.
+repo_url: https://github.com/bsgp/docs
+repo_name: BSG Support Docs
+nav:
+  - Home: 'index.md'
+  - Solutions:
+    - EAI:
+      - Overview: 'eai/index.md'
+      - Release Notes: 'eai/release_notes.md'
+      - Prerequisites: 'eai/prerequisites.md'
+      - Functions:
+        - List: 'eai/functions/index.md'
+        - 'Flow 생성': 'eai/functions/create_flow.md'
+        - 'Step 추가':
+          - List: 'eai/functions/add_step.md'
+          - 'RFC Step 추가': 'eai/functions/add_rfc_step.md'
+  - Roadmaps:
+    - EAI: 'eai/roadmap.md'
+theme: 
+  name: material
+  logo: assets/bsg-logo.png
+  favicon: assets/doc-bsg-logo.png
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.footer
+    - navigation.top
+    - content.action.edit
+plugins: 
+  - search
+  - mermaid2
+extra:
+  homepage: https://bsg.support
+extra_css:
+  - extra.css
+markdown_extensions:
+  - toc:
+      toc_depth: 3
