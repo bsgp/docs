@@ -11,5 +11,5 @@
 
 ## Related Links
 
-* [RFC Step 추가](/eai/functions/add_rfc_step)
-* [DB Step 추가](/eai/functions/add_db_step)
+* [RFC Step 추가](/eai/functions/add_rfc_step.md)
+* [DB Step 추가](/eai/functions/add_db_step.md)

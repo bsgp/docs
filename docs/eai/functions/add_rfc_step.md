@@ -2,7 +2,7 @@
 
 SAP RFC 함수를 호출하는 Step입니다.
 
-> * SAP RFC 함수를 호출하려면 사전에 SAP 서버와 통신할수 있게 네트워크 연결을 해야 합니다. [사전준비사항](/eai/prerequisites)을 확인해보세요.
+> * SAP RFC 함수를 호출하려면 사전에 SAP 서버와 통신할수 있게 네트워크 연결을 해야 합니다. [사전준비사항](/eai/prerequisites.md)을 확인해보세요.
 > * Config를 선택하려면 미리 [Config 추가](/eai/add_config)를 해야 합니다.
 
 1. "Steps" tab에서 "Add" 버튼을 클릭합니다.
