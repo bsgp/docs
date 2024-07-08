@@ -28,6 +28,7 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material
+      - run: pip install mkdocs-mermaid2-plugin
       - run: mkdocs build
 
       - name: Configure AWS credentials
@@ -38,4 +39,3 @@ jobs:
           aws-region: ap-northeast-2
 
       - run: aws s3 sync site/ s3://docs-bsg.support/site --delete
-      
