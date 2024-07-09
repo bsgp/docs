@@ -27,16 +27,21 @@ jobs:
           github-token: ${{ secrets.github_token }}
           output-file: "false"
           skip-on-empty: "false"
-      - run: echo ${{ steps.changelog.outputs }}
+      - name: Echo Changelog Outputs
+        run: echo ${{ toJson(steps.changelog.outputs) }}
+      
       - name: Create Release
-        uses: actions/create-release@v1
-        if: ${{ steps.changelog.outputs.skipped != 'true' }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.github_token }}
+        uses: softprops/action-gh-release@v2
         with:
+          token: ${{ secrets.GH_OWNER_TOKEN }}
+          prerelease: false
+          draft: false
+          files: bin/*
+          generate_release_notes: true
           tag_name: ${{ steps.changelog.outputs.tag }}
-          release_name: ${{ steps.changelog.outputs.tag }}
+          name: ${{ steps.changelog.outputs.tag }}
           body: ${{ steps.changelog.outputs.clean_changelog }}
+          
   deploy:
     runs-on: ubuntu-latest
     if: ${{ always() }}
