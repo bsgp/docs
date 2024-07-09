@@ -11,8 +11,8 @@ on:
     paths:
       - '**/RELEASE'
 
-# permissions:
-#   contents: write
+permissions:
+  contents: write
 
 jobs:
   gh-release:
