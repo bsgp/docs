@@ -77,3 +77,4 @@ jobs:
           aws-region: ap-northeast-2
 
       - run: aws s3 sync site/ s3://docs-bsg.support/site --delete
+      - run: aws cloudfront create-invalidation --distribution-id E332XH3OIHEHP5 --path /index.html
