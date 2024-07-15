@@ -16,6 +16,7 @@ nav:
           - List: 'eai/functions/add_step.md'
           - 'RFC Step 추가': 'eai/functions/add_rfc_step.md'
           - 'DB Step 추가': 'eai/functions/add_db_step.md'
+        - 'Config 생성 및 배포': 'eai/functions/create_config.md'
   - Roadmaps:
     - EAI: 'eai/roadmap.md'
 theme: 
