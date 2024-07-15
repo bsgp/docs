@@ -16,6 +16,9 @@ nav:
           - List: 'eai/functions/add_step.md'
           - 'RFC Step 추가': 'eai/functions/add_rfc_step.md'
           - 'DB Step 추가': 'eai/functions/add_db_step.md'
+        - 'Interface 생성': 'eai/functions/create_interface.md'
+        - 'Endpoint 생성': 'eai/functions/create_endpoint.md'
+        - 'Flow, Interface, Endpoint 배포': 'eai/functions/deploy.md'
         - 'Config 생성 및 배포': 'eai/functions/create_config.md'
   - Roadmaps:
     - EAI: 'eai/roadmap.md'
