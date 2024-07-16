@@ -18,7 +18,7 @@ nav:
     - LC5:
       - Overview: 'lc5/index.md'
       - Functions:
-        - "미리 정의된 컴포넌트 라이브러리": 'lc5/functions/prebuilt_components.md'
+        - "미리 정의된 컴포넌트": 'lc5/functions/prebuilt_components.md'
         - "미리보기": 'lc5/functions/preview.md'
         - "반응형 디자인 지원": 'lc5/functions/responsive.md'
         - "데이터 바인딩": 'lc5/functions/binding.md'
