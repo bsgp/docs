@@ -1,6 +1,7 @@
 {
   "version": "0.1.13",
   "scripts": {
-    "install": "pip install -r requirements.txt"
+    "install": "pip install -r requirements.txt",
+    "start": "mkdocs serve"
   }
 }
