@@ -93,7 +93,7 @@ LC5에서는 Input, Radio, Button 등 폼에서 자주 쓰이는 컴포넌트를
 
 ### Status
 
-<div style="display: flex; gap: 0.5rem;"><img src="/lc5/functions/assets/prebuilt_components/status.png"/><img src="/lc5/functions/assets/prebuilt_components/status2.png"/></div>
+<div style="display: flex; gap: 0.5rem;"><img src="/lc5/concepts/assets/prebuilt_components/status.png"/><img src="/lc5/concepts/assets/prebuilt_components/status2.png"/></div>
 
 항목의 상태를 시각적으로 표시하는 컴포넌트로, 미리 정의된 색상을 통해 상태를 구분할 수 있습니다.
 

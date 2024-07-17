@@ -17,13 +17,13 @@ nav:
           - 'RFC Step 추가': 'eai/functions/add_rfc_step.md'
     - LC5:
       - Overview: 'lc5/index.md'
-      - Functions:
-        - "미리 정의된 컴포넌트": 'lc5/functions/prebuilt_components.md'
-        - "미리보기": 'lc5/functions/preview.md'
-        - "반응형 디자인 지원": 'lc5/functions/responsive.md'
-        - "데이터 바인딩": 'lc5/functions/binding.md'
-        - "템플릿 및 테마": 'lc5/functions/templates.md'
-        - "버전 관리": 'lc5/functions/versioning.md'
+      - Concepts:
+        - "미리 정의된 컴포넌트": 'lc5/concepts/prebuilt_components.md'
+        - "미리보기": 'lc5/concepts/preview.md'
+        - "반응형 디자인 지원": 'lc5/concepts/responsive.md'
+        - "데이터 바인딩": 'lc5/concepts/binding.md'
+        - "템플릿 및 테마": 'lc5/concepts/templates.md'
+        - "버전 관리": 'lc5/concepts/versioning.md'
   - Roadmaps:
     - EAI: 'eai/roadmap.md'
 theme: 

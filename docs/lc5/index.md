@@ -33,11 +33,11 @@ Builder 페이지에서 연결될 경로(path)와 배포할 버전을 선택하�
 
 ## More Info
 
-기능에 대한 상세 설명을 보려면 아래 링크를 참고하세요.
+LC5의 메인 컨셉을 더 살펴보려면 아래 링크를 참고하세요.
 
-- [미리 정의된 컴포넌트](functions/prebuilt_components.md)
-- [미리보기](functions/preview.md)
-- [반응형 디자인 지원](functions/responsive.md)
-- [데이터 바인딩](functions/binding.md)
-- [템플릿 및 테마](functions/templates.md)
-- [버전 관리](functions/versioning.md)
+- [미리 정의된 컴포넌트](concepts/prebuilt_components.md)
+- [미리보기](concepts/preview.md)
+- [반응형 디자인 지원](concepts/responsive.md)
+- [데이터 바인딩](concepts/binding.md)
+- [템플릿 및 테마](concepts/templates.md)
+- [버전 관리](concepts/versioning.md)
