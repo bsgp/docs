@@ -19,5 +19,5 @@ contents를 배포하기 위해서는 특정 시점의 정보가 담겨있는 �
 1. Deploy 컬럼 "SelectBox"❶에서 배포하고자 하는 시스템을 선택합니다. 다중 선택이 가능합니다.
    ![Image](assets/eai_deploy.png)
 2. "Deploy"❷ 버튼을 클릭합니다. 
-3. 정상적으로 완료시 "Deployed" 체크박스가 체크 상태로 변경됩니다.
+3. 정상적으로 완료시 "Deployed" 컬럼의 체크박스가 체크 상태로 변경됩니다.
    ![Image](assets/eai_deploy_fin.png)
