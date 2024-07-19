@@ -5,6 +5,17 @@ LC5는 기본적으로 SAP에서 제공하는 [UI5 컴포넌트](https://openui5
 
 UI5 컴포넌트는 **반응형 디자인**을 지원하며, 이는 LC5에도 적용됩니다. 반응형 디자인이란 웹 페이지의 레이아웃이 뷰포트(viewport)의 크기에 따라 자동으로 조정되는 기능을 말합니다. 이를 통해 개발자는 별도의 설정 없이도 다양한 디바이스에서 일관된 사용자 경험을 제공할 수 있습니다. PC, 태블릿, 스마트폰 등 어떤 기기에서도 최적의 화면 배치를 제공함으로써, 사용자는 더 나은 접근성과 유연성을 누릴 수 있습니다.
 
+<figure>
+<img src="/lc5/concepts/assets/prebuilt_components/lc5_responsive_wide.png" alt="넓은 뷰포트에서의 lc5 화면">
+<figcaption style="color: gray; font-style:normal; margin: 0.5em auto;">화면 너비가 1440픽셀 이상일 때의 LC5 렌더 결과 화면</figcaption>
+</figure>
+<figure>
+<img src="/lc5/concepts/assets/prebuilt_components/lc5_responsive_phone.png" alt="좁은 뷰포트에서의 lc5 화면" style="height:400px">
+<figcaption style="color: gray; font-style:normal; margin: 0.5em auto;">화면 너비가 600픽셀 이하일 때의 LC5 렌더 결과 화면</figcaption>
+</figure>
+
+Builder 페이지에서 컴포넌트 및 레이아웃의 너비, 높이 등 스타일을 수동으로 지정하여 적용하는 것도 가능합니다.
+
 LC5에서 정의하는 컴포넌트는 크게 두 가지로 분류됩니다. 하나는 페이지의 한 섹션을 레이아웃으로서 차지하는 **레이아웃 컴포넌트**이고, 다른 하나는 각 레이아웃 안에 배치되는 작은 단위의 **세부 컴포넌트**입니다.
 
 ## 레이아웃 컴포넌트

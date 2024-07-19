@@ -37,7 +37,6 @@ LC5의 메인 컨셉을 더 살펴보려면 아래 링크를 참고하세요.
 
 - [Builder, Meta, Renderer](concepts/builder_renderer.md)
 - [미리 정의된 컴포넌트](concepts/prebuilt_components.md)
-- [반응형 디자인 지원](concepts/responsive.md)
 - [데이터 바인딩](concepts/binding.md)
 - [템플릿 및 테마](concepts/templates.md)
 - [버전 관리](concepts/versioning.md)

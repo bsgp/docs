@@ -20,7 +20,6 @@ nav:
       - Concepts:
         - "Builder, Meta, Renderer": 'lc5/concepts/builder_renderer.md'
         - "미리 정의된 컴포넌트": 'lc5/concepts/prebuilt_components.md'
-        - "반응형 디자인 지원": 'lc5/concepts/responsive.md'
         - "데이터 바인딩": 'lc5/concepts/binding.md'
         - "템플릿 및 테마": 'lc5/concepts/templates.md'
         - "버전 관리": 'lc5/concepts/versioning.md'
