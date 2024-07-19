@@ -21,8 +21,8 @@ nav:
               - "Builder, Renderer": "lc5/concepts/builder_renderer.md"
               - "미리 정의된 컴포넌트": "lc5/concepts/prebuilt_components.md"
               - "Meta, State": "lc5/concepts/meta_state.md"
-              - "데이터 바인딩": "lc5/concepts/binding.md"
               - "커스텀 함수": "lc5/concepts/function.md"
+              - "데이터 바인딩": "lc5/concepts/binding.md"
               - "템플릿 및 테마": "lc5/concepts/templates.md"
               - "버전 관리": "lc5/concepts/versioning.md"
   - Roadmaps:
