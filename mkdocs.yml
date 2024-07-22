@@ -7,6 +7,7 @@ nav:
   - Solutions:
     - EAI:
       - Overview: 'eai/index.md'
+      - Concepts: 'eai/concepts.md'
       - Release Notes: 'eai/release_notes.md'
       - Prerequisites: 'eai/prerequisites.md'
       - Functions:
