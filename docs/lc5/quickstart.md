@@ -133,7 +133,7 @@ Header는 여러 버튼들을 추가할 수 있는, 웹페이지 최상단의 �
 
 ![Image](assets/quickstart/main_button_4.png)
 
-커스텀 함수를 연결할 수 있는 Function Editor에 입장했습니다. 상단에 있는 테이블은 현재 접근 가능한 State path입니다. (일부 우리 폼에 맞지 않는 attributes는 무시하세요, 제가 잘못 넣었습니다.) 이제 우리는 이 정보를 바탕으로 Form State에 있는 데이터를 Table State로 옮기는 작업을 할 것입니다. 우선은 아래와 같이 입력하세요. (Function에 대한 자세한 설명은 [커스텀 함수](/lc5/concepts/function) 페이지를 참고하세요)
+커스텀 함수를 연결할 수 있는 Function Editor에 입장했습니다. 상단에 있는 테이블은 현재 접근 가능한 State path입니다. (일부 우리 폼에 맞지 않는 attributes는 무시하세요, 제가 잘못 넣었습니다.) 이제 우리는 이 정보를 바탕으로 Form State에 있는 데이터를 Table State로 옮기는 작업을 할 것입니다. 우선은 아래와 같이 입력하세요.
 
 ```
 async () => {
@@ -146,6 +146,8 @@ async () => {
   };
 };
 ```
+
+Function에 대한 자세한 설명은 [커스텀 함수](/lc5/concepts/function) 페이지를 참고하세요. 또 State path의 구조에 대해 궁금하다면 [Meta, State](/lc5/concepts/meta_state/#state_1) 페이지를 참고하세요.
 
 상단의 확인 버튼을 누르고, 저장 후 Preview를 해보세요. 그리고 폼을 채운 후 방금 생성한 저장 버튼을 눌러 보세요.
 
