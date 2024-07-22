@@ -40,6 +40,6 @@ LC5에 대해 더 살펴보고 싶으면 아래 링크를 참고하세요.
 - [미리 정의된 컴포넌트](concepts/prebuilt_components.md)
 - [Meta, State](concepts/meta_state.md)
 - [커스텀 함수](concepts/function.md)
-- [데이터 바인딩](concepts/binding.md)
+- [Builder UI 세부사항](concepts/builder_detail.md)
 - [템플릿 및 테마](concepts/templates.md)
 - [버전 관리](concepts/versioning.md)
