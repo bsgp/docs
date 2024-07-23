@@ -2,7 +2,18 @@
 
 이번 장에서는 Builder 페이지의 UI를 통해 설정할 수 있는 각종 옵션 및 프로퍼티에 대한 세부 설명을 다루도록 하겠습니다.
 
-## 맨 첫번째 위 table
+## UI 구성 요소
+
+LC5 빌더 툴의 UI는 크게 다음과 같은 주요 구성 요소로 나눌 수 있습니다.
+
+1. 상단 툴바 : 레이아웃 컴포넌트 추가, 리스트 페이지로 이동, 저장 등 주요 기능을 빠르게 접근할 수 있는 메뉴가 위치합니다.
+2. Meta 설정 폼 : 빌더를 사용해 생성한 Meta 데이터 관련 설정을 할 수 있는 폼입니다.
+3. 하단 패널 : 추가한 레이아웃들에 대한 조회와 각 레이아웃에 대한 설정, 컴포넌트 추가 및 배치를 할 수 있는 테이블 형태의 레이아웃입니다.
+4. 편집 다이얼로그 : 선택한 컴포넌트 혹은 레이아웃에 대한 구체적인 속성 편집 및 추가를 할 수 있는 다이얼로그 형태의 레이아웃입니다.
+
+이 페이지에서는 각 UI 구성 요소의 사용 방법과 옵션에 대한 상세 설명을 제공합니다.
+
+## 상단 툴바
 
 ## Form Edit
 
@@ -13,14 +24,14 @@
 ## Component Edit Dialog
 
 LC5 빌더에서 컴포넌트를 추가하고 나면, `Edit` 버튼을 통해 컴포넌트의 상세 설정을 할 수 있는 다이얼로그에 접근할 수 있습니다.
-![Image](assets/builder_detail/properties_edit.png)
-![Image](assets/builder_detail/components_dialog.png)
+![Image](assets/builder_ui/properties_edit.png)
+![Image](assets/builder_ui/components_dialog.png)
 
 다이얼로그의 상단부에는 컴포넌트에 관한 설정을 할 수 있는 폼이, 하단부에는 컴포넌트에 전달되는 속성(properties, 이하 컴포넌트 옵션)을 관리할 수 있는 테이블이 있습니다. 각 파트에 대해 간략하게 설명드리도록 하겠습니다.
 
 ### 상단부 폼
 
-![Image](assets/builder_detail/components_dialog_up.png)
+![Image](assets/builder_ui/components_dialog_up.png)
 
 - Key : 컴포넌트 Key를 설정할 수 있는 필드입니다. 컴포넌트 Key의 쓰임에 대한 설명은 [Meta, State](/lc5/concepts/meta_state/#key-key)를 참고하세요.
 - ignore : 생성한 컴포넌트를 삭제하고 싶을 경우 설정할 수 있는 속성입니다. ignore로 표시된 컴포넌트는 렌더러 페이지에서 표시되지 않습니다. 이는 기존 데이터를 유지하면서 렌더러에서는 없애고 싶을 때 유용합니다.
@@ -29,7 +40,7 @@ LC5 빌더에서 컴포넌트를 추가하고 나면, `Edit` 버튼을 통해 �
 
 ### 하단부 테이블
 
-![Image](assets/builder_detail/components_dialog_down.png)
+![Image](assets/builder_ui/components_dialog_down.png)
 
 - Key : 컴포넌트 옵션 키입니다. 설정하고자 하는 옵션의 이름을 지정합니다.
   셀렉트 박스 오픈 시 지정한 컴포넌트 타입에 따라 추천 옵션이 주어집니다.
@@ -43,30 +54,21 @@ LC5 빌더에서 컴포넌트를 추가하고 나면, `Edit` 버튼을 통해 �
 
 #### Array
 
+![Image](assets/builder_ui/array_type.png)
+
+Array 타입은 특수한 타입으로, 폼 편집 다이얼로그의 table 속성에만 적용할 수 있습니다. 폼 다이얼로그에서 table 프로퍼티로 Array 타입 옵션을 생성하면, 멀티 셀렉트 컴포넌트가 Value 컬럼에 나타나며 현재 빌더 페이지에서 생성해 둔 테이블들의 key가 선택지로 주어집니다. **만약 여기서 특정 테이블을 선택하면, 해당 폼의 화면에서는 지정한 테이블만 보이게 되고, 다른 폼을 열었을 때 그 테이블이 보이지 않게 됩니다.** 이는 폼에 따라 특정한 테이블을 보여주고 싶을 때 유용합니다.
+
 #### Boolean, Number, String
 
 각 이름에 해당하는 JavaScript 원시 데이터를 설정할 수 있는 타입입니다. 입력 시 따옴표를 추가할 필요는 없으며 지정할 데이터를 그대로 입력하면 됩니다.
+
 기본적으로 설정한 값이 그대로 각 타입으로 변환되어 전달되지만, 데이터 바인딩을 사용하여 동적인 State 접근을 할 수도 있습니다. 데이터 바인딩에 대한 설명은 다음 섹션을 참고하세요.
 
 #### Function
 
-Function은 크게 두 가지로 구분됩니다.
+컴포넌트 값, 혹은 컴포넌트 이벤트 핸들러로 지정할 수 있는 함수입니다. 코드 에디터를 통해 함수 로직을 작성할 수 있으며 현재는 JS 함수만 지원합니다.
 
-1. **async Function** : onChange, onClick 등 이벤트 핸들러 이름을 Key로 할 경우 지정되는 함수 타입입니다. 여기서 작성한 함수는 옵션값에 함수 그 자체로 전달되어 부착됩니다.
-2. **Function** : 이벤트 핸들러 옵션이 아닌 기타 옵션의 경우 일반 Function으로 지정됩니다. 여기서 지정한 함수는 컴포넌트 렌더링 시점에 실행되어 함수의 리턴값이 옵션값으로 전달됩니다.
-
-async Function과 일반 Function의 구분은 코드 입력 에디터의 UI를 통해 확인할 수 있습니다.
-
-  <div style="display: flex; gap: 10px;">
-  <figure>
-  <img src="/lc5/concepts/assets/builder_detail/normal_func.png" alt="일반 function UI" style="width:18.75rem; height: 12.5rem">
-  <figcaption style="color: gray; font-style:normal; margin: 0.5em auto;">일반 Function일 때의 코드 에디터 UI</figcaption>
-  </figure>
-  <figure>
-  <img src="/lc5/concepts/assets/builder_detail/async_func.png" alt="async function UI" style="width:18.75rem; height: 12.5rem">
-  <figcaption style="color: gray; font-style:normal; margin: 0.5em auto;">async Function일 때의 코드 에디터</figcaption>
-  </figure>
-    </div>
+Function은 Option Key로 `onPress`, `onChange` 같이 해당 컴포넌트에 사용가능한 이벤트 핸들러 타입을 부여할 경우 async Function으로 처리되고, 나머지 경우는 non-async Function으로 처리됩니다. async Function과 non-async Function에 대한 설명은 [Function 페이지](/lc5/concepts/function/#-_1)를 참고하세요.
 
 #### Path
 
