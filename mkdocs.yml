@@ -35,6 +35,7 @@ theme:
     - navigation.path
     - navigation.footer
     - navigation.top
+    - navigation.indexes
     - content.action.edit
 plugins: 
   - search
