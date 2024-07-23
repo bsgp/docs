@@ -147,7 +147,7 @@ async () => {
 };
 ```
 
-Function에 대한 자세한 설명은 [커스텀 함수](/lc5/concepts/function) 페이지를 참고하세요. 또 State path의 구조에 대해 궁금하다면 [Meta, State](/lc5/concepts/meta_state/#state_1) 페이지를 참고하세요.
+Function에 대한 자세한 설명은 [함수](/lc5/concepts/function) 페이지를 참고하세요. 또 State path의 구조에 대해 궁금하다면 [Meta, State](/lc5/concepts/meta_state/#state_1) 페이지를 참고하세요.
 
 상단의 확인 버튼을 누르고, 저장 후 Preview를 해보세요. 그리고 폼을 채운 후 방금 생성한 저장 버튼을 눌러 보세요.
 
