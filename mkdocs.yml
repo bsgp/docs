@@ -24,7 +24,7 @@ nav:
               - "미리 정의된 컴포넌트": "lc5/concepts/prebuilt_components.md"
               - "Meta, State": "lc5/concepts/meta_state.md"
               - "함수": "lc5/concepts/function.md"
-              - "경로 및 버전 관리": "lc5/concepts/versioning.md"
+              - "경로 및 버전 관리": "lc5/concepts/path_version.md"
           - Reference:
               - "Overview": "lc5/reference/index.md"
               - "Builder UI": "lc5/reference/builder_ui.md"
