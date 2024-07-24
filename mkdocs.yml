@@ -24,6 +24,7 @@ nav:
     - LC5:
       - Overview: "lc5/index.md"
       - Quick Start: "lc5/quickstart.md"
+      - Release Notes: "lc5/release_notes.md"
       - Concepts:
         - "Overview": "lc5/concepts/index.md"
         - "Builder, Renderer": "lc5/concepts/builder_renderer.md"
@@ -38,6 +39,7 @@ nav:
         - "함수 파라미터": "lc5/reference/function.md"
   - Roadmaps:
       - EAI: "eai/roadmap.md"
+      - LC5: "lc5/roadmap.md"
 theme:
   name: material
   logo: assets/bsg-logo.png

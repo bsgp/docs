@@ -41,13 +41,13 @@ path를 UI보다 먼저 추가하는 이유는 path가 지정되어야 UI Previe
 ![Image](assets/quickstart/4_addform.png)
 ![Image](assets/quickstart/5_addform2.png)
 
-하단 테이블에 폼이 추가된 게 보이시나요? 간단한 클릭으로 우리는 프로젝트에 폼을 추가했습니다. 어디 한 번 생성된 결과 UI를 미리 봐 보도록 하겠습니다. 먼저 Save를 누르고, 상단의 Preview 버튼을 눌러보세요.
+하단 테이블 패널에 폼이 추가된 게 보이시나요? 간단한 클릭으로 우리는 프로젝트에 폼을 추가했습니다. 어디 한 번 생성된 결과 UI를 미리 봐 보도록 하겠습니다. 먼저 Save를 누르고, 상단의 Preview 버튼을 눌러보세요.
 
 ![Image](assets/quickstart/6_preview.png)
 
 preview 버튼을 누르면, 웹 사이트의 url이 `preview/[지정한 path값]`으로 이동된 것을 확인하실 수 있습니다. 이렇듯 Preview는 지금까지 만들어둔 UI를 미리 확인할 수 있는 사이트로 이동시켜주는 기능입니다. 하지만 preview 사이트에는 비어있는 페이지가 있을 것입니다. 이는 우리가 Form 레이아웃만 생성하고, **내부의 컴포넌트는 하나도 채우지 않았기 때문입니다.**
 
-그럼 Form을 한 번 채워 보겠습니다. 이전 페이지로 돌아가서 테이블의 Form 탭을 클릭하고, **container 추가** 버튼을 눌러보세요.
+그럼 Form을 한 번 채워 보겠습니다. 이전 페이지로 돌아가서 테이블 패널의 생성해둔 form 탭을 클릭하고, **container 추가** 버튼을 눌러보세요.
 
 ![Image](assets/quickstart/add_container.png)
 
@@ -67,7 +67,7 @@ preview 버튼을 누르면, 웹 사이트의 url이 `preview/[지정한 path값
 
 ![Image](assets/quickstart/edit_component.png)
 
-컴포넌트 설정을 할 수 있는 페이지가 나타났습니다. 많은 필드들이 있지만, 우선은 필요한 요소만 설정하도록 하겠습니다. 각 필드들의 자세한 설명은 [컴포넌트 세팅](/lc5/concepts/binding.md) 페이지를 참고하세요.
+컴포넌트 설정을 할 수 있는 편집 다이얼로그가 나타났습니다. 많은 필드들이 있지만, 우선은 필요한 요소만 설정하도록 하겠습니다. 각 필드들의 자세한 설명은 [Builder UI](/lc5/reference/builder_ui/#_3) 페이지를 참고하세요.
 
 먼저 상단 폼에서 Component를 클릭해서 Input을 선택해 주세요. 그런 다음, Key 값을 name으로 설정하도록 하겠습니다. 완성된 모습은 다음과 같습니다.
 
@@ -101,7 +101,7 @@ preview 버튼을 누르면, 웹 사이트의 url이 `preview/[지정한 path값
 
 ![Image](assets/quickstart/table_1.png)
 
-테이블 수정 창은 폼과 조금 다르지만, 거의 유사합니다. 폼의 container라는 것이 테이블엔 없고, 폼의 field 대신 column이 있습니다. 컬럼은 우리가 아는 바로 그 테이블의 열을 말합니다. 테이블 컬럼을 하나 추가하면, 폼의 field와 마찬가지로 Add Component 버튼이 생깁니다. 이를 통해 각 컬럼에 렌더링될 컴포넌트를 지정할 수 있습니다.
+테이블 편집 패널은 폼과 조금 다르지만, 거의 유사합니다. 폼의 container라는 것이 테이블엔 없고, 폼의 field 대신 column이 있습니다. 컬럼은 우리가 아는 바로 그 테이블의 열을 말합니다. 테이블 컬럼을 하나 추가하면, 폼의 field와 마찬가지로 Add Component 버튼이 생깁니다. 이를 통해 각 컬럼에 렌더링될 컴포넌트를 지정할 수 있습니다.
 
 우선 우리는 회원 등록 폼에서 만들었던 필드와 같은 key들을 가진 테이블 컬럼들을 설정해 주겠습니다. 이렇게 일치하는 key를 설정하지 않으면, 나중에 일일이 데이터를 맞춰줘야 하므로 골치아파질 것입니다. 완성된 테이블의 Builder View는 다음과 같습니다.
 
@@ -115,23 +115,23 @@ preview 버튼을 누르면, 웹 사이트의 url이 `preview/[지정한 path값
 
 ### Header 생성
 
-이제 폼에서 데이터를 입력하고 저장을 누르면, 테이블에 하나씩 쌓이는 구현을 해 보겠습니다. 다시 빌더 페이지로 돌아가서, 이번엔 Actions의 Add Main Button을 눌러주세요.
+이제 폼에서 데이터를 입력하고 저장을 누르면, 테이블에 하나씩 쌓이는 구현을 해 보겠습니다. 다시 빌더 페이지로 돌아가서, 이번엔 Actions의 Add Header를 눌러주세요.
 
-![Image](assets/quickstart/main_button_1.png)
+![Image](assets/quickstart/header_1.png)
 
-누르면 메타 테이블에 header 탭이 추가된 것을 볼 수 있습니다.
+누르면 하단 테이블 패널에 header 탭이 추가된 것을 볼 수 있습니다.
 
 Header는 여러 버튼들을 추가할 수 있는, 웹페이지 최상단의 레이아웃입니다. 헤더 탭을 클릭하고 button 추가 버튼을 클릭하세요. 버튼이 생기면 Properties 컬럼의 Edit 버튼을 눌러 봅시다.
 
-![Image](assets/quickstart/main_button_2.png)
+![Image](assets/quickstart/header_2.png)
 
 버튼 속성 편집창입니다. 이제 꽤 익숙해졌을 것입니다. Text 란에 **저장** 텍스트를 입력하고, option 추가를 눌러 보세요.
 
-![Image](assets/quickstart/main_button_3.png)
+![Image](assets/quickstart/header_3.png)
 
 여기서 중요합니다. 우리는 버튼을 누를 때 폼의 내용이 저장되는 로직을 만들어낼 것입니다. 생성된 option의 Key를 **onPress**로 입력하고, Type를 **Function**으로 지정하세요. 그런 다음 Value 쪽에 생긴 edit 버튼을 누르세요.
 
-![Image](assets/quickstart/main_button_4.png)
+![Image](assets/quickstart/header_4.png)
 
 커스텀 함수를 연결할 수 있는 Function Editor에 입장했습니다. 상단에 있는 테이블은 현재 접근 가능한 State path입니다. (일부 우리 폼에 맞지 않는 attributes는 무시하세요, 제가 잘못 넣었습니다.) 이제 우리는 이 정보를 바탕으로 Form State에 있는 데이터를 Table State로 옮기는 작업을 할 것입니다. 우선은 아래와 같이 입력하세요.
 
@@ -155,6 +155,6 @@ Function에 대한 자세한 설명은 [함수](/lc5/concepts/function) 페이�
 
 폼의 내용이 테이블로 저장되었습니다! 🥳 회원 명단 페이지가 몇 번의 클릭과 입력으로 간단하게 구현되었습니다.
 
-본 예제에서는 간단한 코드 샘플을 위해 State를 활용하여 폼 전송을 구현했지만, 실제 LC5에서는 S3와 연결하여 지속 가능한 저장소에 데이터를 넣을 수 있는 모듈이 내장되어 있습니다. 또한, BSG에서는 Lambda, DynamoDB 등 AWS의 수많은 서비스들과 연동되어 복잡한 비즈니스 로직을 설계할 수 있는 서비스인 **API-Hub**(이하 IHub)를 제공합니다. LC5에 IHub를 연동해서 사용한다면, 여러 서비스를 아우르는 복잡한 로직을 LC5에 간단하게 붙일 수 있습니다. 그러므로 LC5를 통해 개발하고 있는 프로젝트의 복잡성이 올라간다면, IHub 연동을 추천드립니다.
+본 예제에서는 간단한 코드 샘플을 위해 State를 활용하여 폼 전송을 구현했지만, 실제 LC5에서는 S3와 연결하여 지속 가능한 저장소에 데이터를 넣을 수 있는 모듈이 내장되어 있습니다. 또한, BSG Support에서는 Lambda, DynamoDB 등 AWS의 수많은 서비스들과 연동되어 복잡한 비즈니스 로직을 설계할 수 있는 서비스인 **API-Hub**(이하 IHub)를 제공합니다. LC5에 IHub를 연동해서 사용한다면, 여러 서비스를 아우르는 복잡한 로직을 LC5에 간단하게 붙일 수 있습니다. 그러므로 LC5를 통해 개발하고 있는 프로젝트의 복잡성이 올라간다면, IHub 연동을 추천드립니다.
 
 좀 더 심화적인 프로젝트 구성을 원한다면 concepts 페이지를 둘러보시고 LC5로 어디까지 만들 수 있는지 시험해 보세요!
