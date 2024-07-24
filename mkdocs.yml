@@ -24,6 +24,7 @@ nav:
     - LC5:
       - Overview: "lc5/index.md"
       - Quick Start: "lc5/quickstart.md"
+      - Release Notes: "lc5/release_notes.md"
       - Concepts:
         - "Overview": "lc5/concepts/index.md"
         - "Builder, Renderer": "lc5/concepts/builder_renderer.md"
