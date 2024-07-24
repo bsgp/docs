@@ -3,27 +3,42 @@ copyright: Copyright &copy; BSG Partners Co., Ltd.
 repo_url: https://github.com/bsgp/docs
 repo_name: BSG Support Docs
 nav:
-  - Home: 'index.md'
+  - Home: "index.md"
   - Solutions:
     - EAI:
-      - Overview: 'eai/index.md'
-      - Concepts: 'eai/concepts.md'
-      - Release Notes: 'eai/release_notes.md'
-      - Prerequisites: 'eai/prerequisites.md'
+      - Overview: "eai/index.md"
+      - Concepts: "eai/concepts.md"
+      - Release Notes: "eai/release_notes.md"
+      - Prerequisites: "eai/prerequisites.md"
       - Functions:
-        - List: 'eai/functions/index.md'
-        - 'Flow 생성': 'eai/functions/create_flow.md'
-        - 'Step 추가':
-          - List: 'eai/functions/add_step.md'
-          - 'RFC Step 추가': 'eai/functions/add_rfc_step.md'
-          - 'DB Step 추가': 'eai/functions/add_db_step.md'
-        - 'Interface 생성': 'eai/functions/create_interface.md'
-        - 'Endpoint 생성': 'eai/functions/create_endpoint.md'
-        - 'Flow, Interface, Endpoint 배포': 'eai/functions/deploy.md'
-        - 'Config 생성 및 배포': 'eai/functions/create_config.md'
+        - List: "eai/functions/index.md"
+        - "Flow 생성": "eai/functions/create_flow.md"
+        - "Step 추가":
+          - List: "eai/functions/add_step.md"
+          - "RFC Step 추가": "eai/functions/add_rfc_step.md"
+          - "DB Step 추가": "eai/functions/add_db_step.md"
+        - "Interface 생성": "eai/functions/create_interface.md"
+        - "Endpoint 생성": "eai/functions/create_endpoint.md"
+        - "Flow, Interface, Endpoint 배포": "eai/functions/deploy.md"
+        - "Config 생성 및 배포": "eai/functions/create_config.md"
+    - LC5:
+      - Overview: "lc5/index.md"
+      - Quick Start: "lc5/quickstart.md"
+      - Concepts:
+        - "Overview": "lc5/concepts/index.md"
+        - "Builder, Renderer": "lc5/concepts/builder_renderer.md"
+        - "미리 정의된 컴포넌트": "lc5/concepts/prebuilt_components.md"
+        - "Meta, State": "lc5/concepts/meta_state.md"
+        - "함수": "lc5/concepts/function.md"
+        - "경로 및 버전 관리": "lc5/concepts/path_version.md"
+      - Reference:
+        - "Overview": "lc5/reference/index.md"
+        - "Builder UI": "lc5/reference/builder_ui.md"
+        - "State 구조": "lc5/reference/state.md"
+        - "함수 파라미터": "lc5/reference/function.md"
   - Roadmaps:
-    - EAI: 'eai/roadmap.md'
-theme: 
+      - EAI: "eai/roadmap.md"
+theme:
   name: material
   logo: assets/bsg-logo.png
   favicon: assets/doc-bsg-logo.png
@@ -37,7 +52,7 @@ theme:
     - navigation.top
     - navigation.indexes
     - content.action.edit
-plugins: 
+plugins:
   - search
   - mermaid2
 extra:
@@ -47,4 +62,5 @@ extra_css:
 markdown_extensions:
   - toc:
       toc_depth: 3
+  - footnotes
 edit_uri: edit/main/docs/
