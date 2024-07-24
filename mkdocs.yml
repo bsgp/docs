@@ -39,6 +39,7 @@ nav:
         - "함수 파라미터": "lc5/reference/function.md"
   - Roadmaps:
       - EAI: "eai/roadmap.md"
+      - LC5: "lc5/roadmap.md"
 theme:
   name: material
   logo: assets/bsg-logo.png
