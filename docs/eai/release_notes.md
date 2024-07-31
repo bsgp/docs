@@ -2,7 +2,7 @@
 
 <p style="display:none;">
 
-### Date: 2024-06-28
+### 2024-06-28
 
 #### New Features
 
@@ -31,7 +31,7 @@
 
 </p>
 
-### Date: 2024-07-31
+### 2024-07-31
 
 #### Enhancements
 
