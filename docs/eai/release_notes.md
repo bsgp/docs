@@ -30,7 +30,13 @@
 - Dependency 2: Description of the dependency.
 
 </p>
-### Date: 2024-08-09
+### 2024-08-22
+
+#### New Features
+
+- Scheduler 기능이 추가되었습니다. 반복 작업이 필요한 Interface를 선택 후, 원하는 실행 시간을 선택하거나 직접 Cron 표현식을 사용하여 스케줄을 만들 수 있습니다. 
+
+### 2024-08-09
 
 #### New Features
 
@@ -40,7 +46,7 @@
 
 #### Enhancements
 
-- 기존에 Flow(Pattern) 레벨에서만 설정할 수 있었던 Alert(알람) 기능을 하위 레벨인 Interface 레벨에서도 설정할 수 있게 개선되었습니다. 이 개선으로 인해 UI도 조금 바뀌었습니다. 기존보다 더 디테일하게 Alert(알람)을 설정 할 수 있게 되었습니다.
+- 기존에 Flow(Pattern) 레벨에서만 설정할 수 있었던 Alert(알람) 기능을 하위 레벨인 Interface 레벨에서도 설정할 수 있게 개선되었습니다. 이 개선으로 인해 UI도 조금 바뀌었습니다. 기존보다 더 디테일하게 Alert(알람)을 설정 할 수 있게 되었습니다.
 
 #### Bug Fixes
 
