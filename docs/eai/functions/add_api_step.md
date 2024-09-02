@@ -34,3 +34,4 @@ REST API를 호출하는 Step입니다.
   draft.json.ifObj = ifObj
 }
 ```
+5. "PostExecution"에는 현재 Step이 실행 완료된 후 동작하는 함수의 소스코드를 입력합니다.
