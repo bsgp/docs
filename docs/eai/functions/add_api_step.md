@@ -9,6 +9,7 @@ REST API를 호출하는 Step입니다.
 2. "Type" 컬럼에서 "API"를 선택합니다.
 3. "Config" 컬럼에서 도메인과 헤더정보가 담긴 설정을 선택합니다.
 4. "PreExecution"에서 Interface와 path, method 정보를 매칭시키는 작업을 진행합니다. 
+   
 ```js
 (draft, context) => {
   const { ifObj } = context
@@ -33,4 +34,3 @@ REST API를 호출하는 Step입니다.
   draft.json.ifObj = ifObj
 }
 ```
-5. "PostExecution"에는 현재 Step이 실행 완료된 후 동작하는 함수의 소스코드를 입력합니다.
