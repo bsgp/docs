@@ -17,6 +17,7 @@ nav:
           - List: "eai/functions/add_step.md"
           - "RFC Step 추가": "eai/functions/add_rfc_step.md"
           - "DB Step 추가": "eai/functions/add_db_step.md"
+          - "REST API Step 추가": "eai/functions/add_api_step.md"
         - "Interface 생성": "eai/functions/create_interface.md"
         - "Endpoint 생성": "eai/functions/create_endpoint.md"
         - "Flow, Interface, Endpoint 배포": "eai/functions/deploy.md"
@@ -65,4 +66,9 @@ markdown_extensions:
   - toc:
       toc_depth: 3
   - footnotes
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 edit_uri: edit/main/docs/

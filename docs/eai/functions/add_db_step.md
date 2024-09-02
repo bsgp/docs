@@ -15,4 +15,4 @@ DB와 관련된 작업을 진행하는 Step입니다.
     |:-------------:|:--------------:|
     | ![Image](assets/eai_db_step_map_input.png) | ![Image](assets/eai_step_map_output.png) |
 
-8. "PostExecution"에는 현재 Step이 실행 완료한 후 필요한 함수를 실행하기 위한 소스코드를 입력할수 있습니다.
+8. "PostExecution"에는 현재 Step이 실행 완료된 후 동작하는 함수의 소스코드를 입력합니다.
