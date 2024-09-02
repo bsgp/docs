@@ -30,6 +30,13 @@
 - Dependency 2: Description of the dependency.
 
 </p>
+
+### 2024-09-02
+
+#### Enhancements
+- Flow(Pattern)의 Step에 REST API 타입이 추가되었습니다. Config에서 domain과 headers를 정보를 설정하여 사용할 수 있습니다. path와 method는 Step 실행전 작동하는 preExecution 함수에 Interface ID와 1:1로 매칭되도록 작성하여 Interface별로 API를 호출할 수 있습니다.
+- Step 실행 전후 작동하는 preExecution과 postExecution 함수의 parameter 정보가 출력되도록 UI가 변경되었습니다. 
+
 ### 2024-08-22
 
 #### New Features
