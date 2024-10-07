@@ -1,0 +1,1793 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../meta_state/">
+      
+      
+        <link rel="next" href="../path_version/">
+      
+      
+      <link rel="icon" href="../../../assets/doc-bsg-logo.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.29">
+    
+    
+      
+        <title>함수 - BSG Support Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.76a95c52.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://bsg.support" title="BSG Support Docs" class="md-header__button md-logo" aria-label="BSG Support Docs" data-md-component="logo">
+      
+  <img src="../../../assets/bsg-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BSG Support Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              함수
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/bsgp/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    BSG Support Docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../eai/" class="md-tabs__link">
+          
+  
+    
+  
+  Solutions
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../eai/roadmap/" class="md-tabs__link">
+          
+  
+    
+  
+  Roadmaps
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://bsg.support" title="BSG Support Docs" class="md-nav__button md-logo" aria-label="BSG Support Docs" data-md-component="logo">
+      
+  <img src="../../../assets/bsg-logo.png" alt="logo">
+
+    </a>
+    BSG Support Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/bsgp/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    BSG Support Docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Solutions
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Solutions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../eai/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    EAI
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            EAI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../eai/concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concepts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../eai/release_notes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Release Notes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../eai/prerequisites/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prerequisites
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../eai/functions/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Functions
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_5" id="__nav_2_1_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            Functions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../eai/functions/create_flow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Flow 생성
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_5_3" id="__nav_2_1_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Step 추가
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_1_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Step 추가
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../eai/functions/add_step/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    List
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../eai/functions/add_rfc_step/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC Step 추가
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../eai/functions/add_db_step/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DB Step 추가
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../eai/functions/add_api_step/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    REST API Step 추가
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../eai/functions/create_interface/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interface 생성
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../eai/functions/create_endpoint/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Endpoint 생성
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../eai/functions/deploy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Flow, Interface, Endpoint 배포
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../eai/functions/create_config/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Config 생성 및 배포
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    LC5
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            LC5
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quickstart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quick Start
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../release_notes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Release Notes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Concepts
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2_4" id="__nav_2_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Concepts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../builder_renderer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Builder, Renderer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prebuilt_components/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    미리 정의된 컴포넌트
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../meta_state/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Meta, State
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    함수
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    함수
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      전달되는 방식에 따른 함수 분류
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="전달되는 방식에 따른 함수 분류">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#async-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      async Function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-async-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      non-async Function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#async-function-non-async-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      async Function과 non-async Function의 구분
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      특별한 함수 타입
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="특별한 함수 타입">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#init-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      최초 함수(Init Function)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#global-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      전역 함수(Global Function)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../path_version/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    경로 및 버전 관리
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reference/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2_5" id="__nav_2_2_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/builder_ui/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Builder UI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/state/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    State 구조
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    함수 파라미터
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Roadmaps
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Roadmaps
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../eai/roadmap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EAI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LC5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      전달되는 방식에 따른 함수 분류
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="전달되는 방식에 따른 함수 분류">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#async-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      async Function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-async-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      non-async Function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#async-function-non-async-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      async Function과 non-async Function의 구분
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      특별한 함수 타입
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="특별한 함수 타입">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#init-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      최초 함수(Init Function)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#global-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      전역 함수(Global Function)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/bsgp/docs/edit/main/docs/lc5/concepts/function.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="_1">함수</h1>
+<p>LC5 Builder에서는 페이지에서 실행될 함수를 작성할 수 있으며, 페이지의 렌더링 사이클 및 컴포넌트 이벤트 핸들러에 커스텀 함수를 연결하여 호출하는 것이 가능합니다. 이를 통해 복잡한 비즈니스 로직을 연결하여 자유도 높은 웹 서비스를 개발할 수 있습니다.</p>
+<p>LC5에서 함수를 구분하는 기준에는 여러 가지가 있습니다. 이번 장에서는 해당 기준들에 대해 살펴보며 함수가 LC5에서 어떻게 정의되는지 알아보겠습니다.</p>
+<h2 id="_2">전달되는 방식에 따른 함수 분류</h2>
+<p><a href="/lc5/quickstart/#header">Quick Start</a> 페이지에서 봤듯이 LC5에서는 함수 타입을 컴포넌트의 옵션으로 전달할 수 있습니다. 하지만 옵션의 종류에 따라 그 값은 <strong>사실 함수가 아닐 수도 있습니다</strong>.</p>
+<p>LC5에서는 <strong>변수에 따라 동적으로 정해지는 값도 Function 타입을 통해 전달할 수 있습니다.</strong> 함수 내에 정의된 로직을 실행하고, 그 결과값을 value에 반영하는 방식입니다. 따라서 이 두 가지 경우를 구별해야 합니다.</p>
+<p>정리하자면, LC5에서 Function 에디터를 통해 전달할 수 있는 값에는 두 가지 종류가 있습니다. 첫 번째는 <strong>함수 자체로 값이 전달되는 방식</strong>이고, 두 번째는 <strong>함수의 실행 결과가 값으로 반영되는 방식</strong>입니다. LC5 내에서 첫 번째 함수는 <strong>async function</strong>, 두 번째 함수는 <strong>non-async function</strong>이라고 명명합니다. 각 함수에 대해 설명드리도록 하겠습니다.</p>
+<h3 id="async-function">async Function</h3>
+<p>작성한 함수가 <strong>함수 그 자체로 값에 전달</strong>되어 부착되는 Function 타입입니다. 보통 직관적으로 생각하는 '함수 타입' 값이 LC5에서는 async Function에 해당합니다.</p>
+<p>async Function 여부는 LC5 내의 시스템에 따라 자동으로 반영되며, 다음 경우들이 async Function에 해당됩니다.</p>
+<ol>
+<li><strong>Add Init Function</strong>을 통해 생성한 최초함수. 최초함수에 대해선 아래에서 설명할 것입니다.</li>
+<li><strong>Key를 <code>onChange</code>, <code>onClick</code>과 같이 이벤트 핸들러 이름으로 붙인 Function Type 옵션</strong>. 여기에는 <code>valueHelpV2-onConfirm</code>, <code>valueHelpV2-onRequest</code>와 같이 valueHelp 관련 이벤트 핸들러도 포함됩니다.</li>
+</ol>
+<p>예시를 들어 보겠습니다. Input 타입 컴포넌트의 <code>onChange</code> 옵션으로 다음과 같은 함수 코드 로직을 설정하고 저장한다고 가정해 봅시다.</p>
+<div class="highlight"><pre><span></span><code>async () =&gt; {
+  console.log(&quot;Hi!&quot;);
+};
+</code></pre></div>
+<p>이 경우 async Function의 두 번째 조건에 해당되므로, Input의 onChange 프로퍼티에 지정한 함수가 그대로 전달되어 인풋값이 변경될 때마다 로그에 'Hi!'가 찍힐 것입니다.</p>
+<p>async 함수의 경우, <span style="color: red;"><strong>반드시 코드 로직 앞에 async 키워드를 붙여야 합니다.</strong></span> 즉, <code>async () =&gt; {}</code> 형태로 작성해야 합니다. async를 붙이지 않고 저장할 경우, 함수가 제대로 실행되지 않을 수 있습니다.</p>
+<h3 id="non-async-function">non-async Function</h3>
+<p>작성한 함수가 컴포넌트 렌더링 시점에 실행되어 <strong>함수의 리턴값이 옵션값으로 전달</strong>되는 Function 타입입니다. 위에서 async Function의 조건에 해당하지 않는 모든 함수 옵션들은 non-async Function으로 처리됩니다.</p>
+<p>예시를 들어 보겠습니다. <a href="/lc5/quickstart">Quick Start</a> 페이지에서 만들었던 회원 명단 페이지에 non-async Function을 사용한 폼 컴포넌트를 하나 추가해 봅시다.</p>
+<p>폼에 Text 타입 컴포넌트를 하나 추가하고, value 타입을 Function으로 지정한 뒤 다음과 같은 값을 넣고 저장하였습니다.</p>
+<div class="highlight"><pre><span></span><code>({ state }) =&gt; {
+  if (
+    !state.forms.forms1 ||
+    !state.forms.forms1.age ||
+    !state.forms.forms1.name
+  ) {
+    return &quot;&quot;;
+  }
+  return `안녕하세요. 올해로 ${state.forms.forms1.age}살인
+    ${state.forms.forms1.name}입니다.`;
+};
+</code></pre></div>
+<p>Preview를 해봅시다. 어떻게 될 것 같나요? 폼의 끝부분에 이름 value와 나이 value를 받아서 동적으로 값을 계산하는 텍스트 컴포넌트가 추가되었습니다.</p>
+<p><img alt="Image" src="../assets/function/function_example.png" /></p>
+<p>이렇듯 Function 함수는 동적으로 값을 계산하여 적용하고자 할 때 사용합니다. 즉, <strong>값을 결정하는 과정에서 지정한 함수를 사용하는 것이지, 함수 자체가 값으로 전달되는 것은 아닙니다.</strong></p>
+<h3 id="async-function-non-async-function">async Function과 non-async Function의 구분</h3>
+<p>특정 옵션의 타입을 Function으로 지정했을 때, 반영될 함수가 async 타입인지는 코드 에디터 UI를 통해 확인할 수 있습니다.</p>
+<p>만약 async 키워드가 파라미터 앞에 붙어 있다면 해당 함수는 async 방식으로 반영된다는 의미입니다. async 키워드가 없다면, non-async Function으로 적용된다는 뜻입니다.</p>
+<div style="display: flex; gap: 10px;">
+  <figure>
+  <img src="/lc5/concepts/assets/function/normal_func.png" alt="non-async Function UI" style="width:18.75rem; height: 12.5rem">
+  <figcaption style="color: gray; font-style:normal; margin: 0.5em auto;">non-async Function일 때의 코드 에디터 UI</figcaption>
+  </figure>
+  <figure>
+  <img src="/lc5/concepts/assets/function/async_func.png" alt="async function UI" style="width:18.75rem; height: 12.5rem">
+  <figcaption style="color: gray; font-style:normal; margin: 0.5em auto;">async Function일 때의 코드 에디터</figcaption>
+  </figure>
+    </div>
+
+<p>async 키워드가 있을 땐 함수 코드 앞에서 async를 넣어야 한다는 사실을 잊지 마세요. 반대로 non-async Function의 경우 async를 붙이면 안 됩니다.</p>
+<h2 id="_3">특별한 함수 타입</h2>
+<p>지금까지 우리는 전달되는 방식에 따라 함수 옵션을 async Function과 non-async Function으로 구분하였습니다. 이번에는 컴포넌트 혹은 레이아웃의 옵션으로 추가되지 않는 특별한 함수들을 소개하도록 하겠습니다.</p>
+<h3 id="init-function">최초 함수(Init Function)</h3>
+<p>최초 함수는 페이지가 처음 렌더링되는 시점에 딱 한 번만 실행되는 함수입니다. 주로 데이터 페칭 로직, state 세팅 코드 등이 들어가게 됩니다.</p>
+<p>최초 함수를 추가하는 방법은 레이아웃 컴포넌트를 추가하는 것과 같이 빌더 페이지의 Actions 버튼을 누르고 <strong>Add Init Function</strong> 버튼을 누르면 됩니다. 이후에는 상단 폼에 있는 <strong>Edit Init. Func.</strong> 버튼이 활성화되며, 이 버튼을 통해 함수 코드에 접근 및 수정할 수 있습니다.</p>
+<p><img alt="Image" src="../assets/function/add_init.png" /></p>
+<p>최초 함수는 함수 타입으로 실행되므로 async Function에 해당됩니다.</p>
+<h3 id="global-function">전역 함수(Global Function)</h3>
+<p>전역 함수는 중복되는 함수 코드 로직을 별도의 공간에 저장하고 재사용하기 위해 만들어진 함수 저장소입니다.</p>
+<p>전역 함수를 추가하기 위해선 Actions 버튼에서 Add Init Function 밑에 있는 <strong>Add Functions</strong> 버튼을 누릅니다. 그러면 이러한 코드 편집창이 뜹니다.</p>
+<p><img alt="Image" src="../assets/function/global_func1.png" /></p>
+<p>전역 함수는 <code>{[키 값] : 함수}</code> 형식의 객체를 리턴합니다. 여기서 저장한 전역 함수들은 다른 함수 옵션에서 <code>fn</code> 파라미터를 통해 접근할 수 있습니다. 예시를 위해 최초 함수 안에서 전역 함수를 사용해 보겠습니다. 전역 함수에 아래와 같이 작성합니다.</p>
+<div class="highlight"><pre><span></span><code>return {
+  testFunction: () =&gt; {
+    console.log(&quot;Global function test&quot;);
+  },
+};
+</code></pre></div>
+<p>그리고 Init Function을 추가해서 아래와 같이 입력합니다.</p>
+<div class="highlight"><pre><span></span><code>async ({ fn }) =&gt; {
+  fn.testFunction();
+};
+</code></pre></div>
+<p>만들어둔 전역 함수는 <code>fn["지정한 키"]()</code> 방식으로 호출할 수 있습니다. 이제 Preview로 이동해서 testFunction이 잘 호출되었는지 확인합니다.</p>
+<p><img alt="Image" src="../assets/function/global_func2.png" /></p>
+<p>지정해둔 console.log 로직이 무사히 불러와져서 실행된 것을 확인할 수 있습니다.</p>
+<p>Global Function 안에서 정의되는 함수는 async 함수와 non-async 함수 둘 다 가능합니다. async 함수를 등록하고 싶을 경우, 함수 앞에 async를 붙여 정의하면 됩니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../meta_state/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Meta, State">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Meta, State
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../path_version/" class="md-footer__link md-footer__link--next" aria-label="Next: 경로 및 버전 관리">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                경로 및 버전 관리
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; BSG Partners Co., Ltd.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.footer", "navigation.top", "navigation.indexes", "content.action.edit"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>
